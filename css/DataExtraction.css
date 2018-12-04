@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 880px;
+    background-color: #b85b5b;
+         /* IE10+ */
+         background-image: -ms-repeating-linear-gradient(top,rgb(255, 255, 255) 0%,rgb(229, 43, 43) 76.5%,rgb(39, 0, 12) 100%);
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255) 0%,rgb(229, 43, 43) 76.5%,rgb(39, 0, 12) 100%);
+}
+a{
+    text-decoration: none;
+}
+/*----------- HEADER ---------*/  
+.wrapper{
+    background: rgb(87, 86, 86);
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+.banner{
+  display: flex;
+}
+.tag{
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 0;
+    color: white;
+}
+.input_field{
+    display: flex;
+    padding: 6px;  
+}
+#username{
+    font-size: 20px; 
+    padding: 6px;
+    border-radius: 10px 0 0 10px ;
+}
+#submit{
+    border-radius: 0 10px 10px 0 ;
+    margin: 0;
+    background: brown;
+    color: antiquewhite;
+    font-weight: bolder;
+    cursor: pointer;
+}
+ /*----------- MAIN ---------*/  
+.wrapper_main{
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+  
+    justify-content: space-evenly;
+    -ms-justify-content: space-evenly;
+    opacity: 0;
+    transition: opacity 1s ease-in 300ms ;
+}
+.profile{
+    text-align: center;
+}
+#avatar{
+    height: 250px;
+    padding: 8px;
+    border: 2px solid slategray;
+}
+.profile_name{
+     font-size: 28px;
+     color: white;
+}
+#profile_link{
+    font-size: 18px;
+    color: darkred;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid darkred;
+        -webkit-box-shadow: 4px 4px 10px 3px rgb(8,1,39);
+        -moz-box-shadow: 4px 4px 10px 3px rgb(8,1,39);
+    box-shadow: 4px 4px 10px 3px rgb(8,1,39);
+    background-color: #cc8dd2;
+        /* IE10+ */
+        background-image: linear-gradient(to top,rgb(4, 118, 148) 0%,rgb(229, 68, 198) 30%,rgb(255, 255, 255) 100%);
+    background-image: -ms-linear-gradient(bottom,rgb(4, 118, 148) 0%,rgb(229, 68, 198) 30%,rgb(255, 255, 255) 100%);
+}
+#profile_link:hover {
+        -webkit-box-shadow: -3px -3px 50px 0px rgb(8,1,39);
+        -moz-box-shadow: -3px -3px 10px 3px rgb(8,1,39);
+    box-shadow: -3px -3px 10px 3px rgb(8,1,39);
+    background-color: #cc8dd2;
+          /* IE10+ */
+        background-image: linear-gradient(to top,rgb(255, 255, 255) 0%,rgb(229, 68, 198) 70%,rgb(4, 118, 148) 100%);
+    background-image: -ms-linear-gradient(bottom,rgb(255, 255, 255) 0%,rgb(229, 68, 198) 70%,rgb(4, 118, 148) 100%);
+}
+/*----------- USER DETAILS ---------*/  
+.detail{
+    width: 400px;    
+}
+.name{
+    font-size: 30px;
+    margin-top: 0px;
+    font-weight: bold;
+    color: black;
+}
+.icon{
+    width: 32px;
+    text-align: center;
+}
+.mail , .follower , .following, .repos, .location{
+    padding: 10px;
+}
+.icon, #mail_id, .follower_link, .following_link, .repos_link, #location_name{
+    font-size: 25px;
+    color: darkblue;
+}
