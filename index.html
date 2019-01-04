@@ -1,58 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="css/DataExtraction.css">
     <title>GitHub User Data Extraction</title>
 </head>
+
 <body>
     <header>
         <div class="wrapper">
-      <div class="banner" >
-       <img src="img/face_icon.png" alt="User" id="face_icon">
-        <span class="tag">Github User Details</span>
+            <div class="banner">
+                <img src="img/face_icon.png" alt="User" id="face_icon">
+                <span class="tag">Github User Details</span>
+            </div>
+            <div class="input_field">
+                <input type="text" name="username" class="username" id="username" placeholder="Enter Your Name" value="">
+                <button type="submit" class="submit" id="submit" onclick="loadUser();">Get User</button>
+            </div>
         </div>
-        <div class="input_field" >
-           <input type="text" name="username" id="username" placeholder="Enter Your Name" value="">
-           <button type="submit" id="submit" onclick="loadUser();" >Get User</button> 
-        </div>
-        </div>      <!--- END OF WRAPPER --->
+        <!--- END OF WRAPPER --->
     </header>
     <main>
-        <div class="wrapper_main">
-           <div class="profile">
-               <img id="avatar" src="" alt="Profile Picture">
-                <p class="profile_name"></p>
-                <a href="" id="profile_link" target="_blank">Visit Profile</a>
-           </div>
-           <div class="detail">
-               <p class="name"></p>
-               <div class="mail">
-               <i class="fas fa-envelope icon"></i>
-               <span id="mail_id"></span>
-               </div>
-               <div class="follower">
-               <i class="fas fa-users icon"></i>
-               <a href="" class="follower_link" target="_blank"> Followers : <span id="follower_number"></span> </a>
-               </div>
-               <div class="following">
-               <i class="fas fa-users icon"></i>
-               <a href="" class="following_link" target="_blank"> Following : <span id="following_number"></span> </a>
-               </div>
-               <div class="repos">
-               <i class="fas fa-file-alt icon"></i>
-               <a href="" class="repos_link" target="_blank"> Repositories : <span id="repos_number" ></span> </a>
-               </div>
-               <div class="location">
-               <i class="fas fa-map-marker-alt icon"></i>
-               <span id="location_name"></span>
-               </div>
-           </div>   <!--- END OF DETAIL --->
-        </div>      <!--- END OF WRAPPER OF MAIN --->
+        <div class="wrapper_main" id="wrapper_main">
+            <div class="profile">
+                <img class="avatar" id="avatar" src="" alt="Profile Picture">
+                <p class="profile_name" id="profile_name"></p>
+                <a href="" class="profile_link" id="profile_link" target="_blank">Visit Profile</a>
+            </div>
+            <div class="detail">
+                <p class="name" id="name"></p>
+                <div class="mail">
+                    <i class="fas fa-envelope icon"></i>
+                    <span class="mail_id" id="mail_id"></span>
+                </div>
+                <div class="follower">
+                    <i class="fas fa-users icon"></i>
+                    <a href="" class="follower_link" id="follower_link" target="_blank"> Followers : <span id="follower_number"></span>
+                    </a>
+                </div>
+                <div class="following">
+                    <i class="fas fa-users icon"></i>
+                    <a href="" class="following_link" id="following_link" target="_blank"> Following : <span id="following_number"></span>
+                    </a>
+                </div>
+                <div class="repos">
+                    <i class="fas fa-file-alt icon"></i>
+                    <a href="" class="repos_link" id="repos_link" target="_blank"> Repositories : <span id="repos_number"></span>
+                    </a>
+                </div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <span class="location_name" id="location_name"></span>
+                </div>
+            </div>
+            <!--- END OF DETAIL --->
+        </div>
+        <!--- END OF WRAPPER OF MAIN --->
     </main>
     <script src="js/dataExtraction.js"></script>
 </body>
+
 </html>
